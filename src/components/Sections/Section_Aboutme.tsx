@@ -1,8 +1,6 @@
 import Title from "../UI/Title";
 import Section from "./Section";
 
-import React from "react";
-
 function Section_Aboutme() {
   return (
     <Section id="About-me">

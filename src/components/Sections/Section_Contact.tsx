@@ -4,8 +4,6 @@ import { Imput_Cntc } from "../Imputs/Imput";
 import { TextArea_Ctnc } from "../Imputs/TextArea";
 import { Btn_send } from "../Buttons/Elmnt_btn";
 
-import React from "react";
-
 function Section_Contact() {
   return (
     <Section id="Contact">

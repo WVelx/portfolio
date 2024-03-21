@@ -1,5 +1,3 @@
-import React from "react";
-
 interface textAreaProps {
   placeholder: string;
   name: string;

@@ -1,4 +1,9 @@
-import { FaLinkedin, FaGithub, FaWhatsapp, FaAngleDoubleDown } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaWhatsapp,
+  FaAngleDoubleDown,
+} from "react-icons/fa";
 import { MdContactMail } from "react-icons/md";
 
 import Icon from "../UI/Icon";
@@ -6,20 +11,23 @@ import TSParticles from "../Particles/TSParticles";
 import { Button_charge } from "../Buttons/Elmnt_other";
 import { Line_gradient } from "../UI/Line";
 
-import React from "react";
 
 function Section_Home() {
   return (
     <section
-     id="Home"
-     className="scroll-mt-16 min-h-screen w-full relative align-middle">
+      id="Home"
+      className="scroll-mt-16 min-h-screen w-full relative align-middle"
+    >
       <TSParticles />
       <div className="container grid md:grid-cols-2 sm:grid-cols-1 relative items-center justify-center mx-auto pt-vh-25">
         <div className="flex justify-center items-center md:pe-5">
           <img className="" src="../src/assets/perfil.jpeg" />
         </div>
         <div className="flex flex-col">
-          <div>
+          <div
+            className="bg-white
+          dark:bg-darkblue"
+          >
             <h1
               className="lg:text-xl md:text-base italic
               text-black dark:text-white mb-2"
@@ -47,7 +55,7 @@ function Section_Home() {
                 <FaWhatsapp />
               </Icon>
             </div>
-            <div className="flex justify-center items-center text-center grid md:grid-cols-2 sm:grid-cols-1">
+            <div className="justify-center items-center text-center grid md:grid-cols-2 sm:grid-cols-1">
               <Button_charge href="#" content="Descargar CV">
                 <FaAngleDoubleDown />
               </Button_charge>

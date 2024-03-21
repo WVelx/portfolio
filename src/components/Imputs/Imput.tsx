@@ -1,5 +1,3 @@
-import React from "react";
-
 interface imputProps {
   type: string;
   placeholder: string;

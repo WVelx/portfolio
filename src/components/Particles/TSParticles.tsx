@@ -18,6 +18,11 @@ const TSParticles = () => {
   }, []);
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
+    let prueba = init;
+    const prueba2 = container ? container : [];
+
+    prueba = true;
+    console.log("Check: ", prueba, prueba2);
   };
 
   const options: ISourceOptions = useMemo(

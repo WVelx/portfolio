@@ -1,4 +1,3 @@
-import React from "react";
 import { Icon } from "../UI/Icon";
 import { Copyright } from "../UI/Copyright";
 import { Line_gradient } from "../UI/Line";

@@ -2,8 +2,6 @@ import Title from "../UI/Title";
 import Section from "./Section";
 import Certificate from "../UI/Certificate";
 
-import React from "react";
-
 function Section_Certificate() {
   return (
     <Section id="Certificates">
