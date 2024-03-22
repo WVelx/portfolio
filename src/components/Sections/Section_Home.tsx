@@ -16,12 +16,22 @@ function Section_Home() {
   return (
     <section
       id="Home"
-      className="scroll-mt-16 min-h-screen w-full relative align-middle"
+      className="scroll-mt-16 w-full relative align-middle
+      2xl:min-h-full
+      min-h-screen"
     >
       <TSParticles />
-      <div className="container grid md:grid-cols-2 sm:grid-cols-1 relative items-center justify-center mx-auto pt-vh-25">
-        <div className="flex justify-center items-center md:pe-5">
-          <img className="" src="../src/assets/perfil.jpeg" />
+      <div className="container grid relative items-center justify-center mx-auto
+      2xl:py-vh-15
+      md:grid-cols-2 md:pt-vh-30
+      grid-cols-1 pt-vh-20">
+        <div className="flex justify-center items-center 
+        md:pb-0
+        pb-7">
+          <img className="object-cover
+          lg:h-72
+          md:h-64
+          h-40" src="../src/assets/perfil.jpeg" />
         </div>
         <div className="flex flex-col">
           <div
@@ -29,22 +39,30 @@ function Section_Home() {
           dark:bg-darkblue"
           >
             <h1
-              className="lg:text-xl md:text-base italic
-              text-black dark:text-white mb-2"
+              className="italic font-bold
+              text-black dark:text-white
+              lg:text-xl 
+              md:text-lg md:mb-2 md:text-start
+              text-base mb-1 text-center"
             >
               <span>{"<"} CHRISTIAN</span>
               <span className="text-blue"> ACOSTA {"/>"}</span>
             </h1>
             <p
-              className="mb-2 lg:text-4xl md:text-xl font-bold
-              text-black dark:text-white"
+              className="font-extrabold
+              text-black dark:text-white
+              lg:text-4xl 
+              md:text-2xl md:mb-2 md:text-start
+              text-xl mb-1 text-center"
             >
-              DESARROLLADOR WEB.
+              DESARROLLADOR WEB
             </p>
           </div>
           <Line_gradient />
           <div>
-            <div className="text-center py-3">
+            <div className="text-center 
+            md:py-4 md:text-3xl
+            py-3 text-2xl">
               <Icon href="#">
                 <FaLinkedin />
               </Icon>
@@ -55,7 +73,11 @@ function Section_Home() {
                 <FaWhatsapp />
               </Icon>
             </div>
-            <div className="justify-center items-center text-center grid md:grid-cols-2 sm:grid-cols-1">
+            <div className="justify-center items-center text-center grid gap-2 
+            md:grid-cols-2 
+            grid-cols-1 
+            lg:text-base
+            text-sm">
               <Button_charge href="#" content="Descargar CV">
                 <FaAngleDoubleDown />
               </Button_charge>

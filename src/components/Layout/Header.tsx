@@ -54,23 +54,31 @@ function Header() {
   ];
 
   return (
-    <nav className="fixed w-full lg:px-8 z-30">
+    <nav
+      className="fixed w-full z-30
+    lg:px-8
+    "
+    >
       <div
-        className="relative lg:container md:px-6 flex h-16 items-center justify-between
+        className="relative flex h-16 items-center justify-between
         shadow-md 
-       bg-white text-black shadow-transpblack
-       dark:bg-darkblue dark:text-white dark:shadow-transpwhite"
+        lg:container 
+        md:px-6
+      bg-white text-black shadow-transpblack
+      dark:bg-darkblue dark:text-white dark:shadow-transpwhite"
       >
         <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
           <BiMenuAltLeft
             onClick={() => setMenu(true)}
-            className="text-3xl cursor-pointer mx-4 lg:hidden"
+            className="text-4xl cursor-pointer mx-4 md:hidden"
           />
         </div>
         <div className="flex flex-grow items-center justify-center md:items-stretch md:justify-start">
           <a
             className="flex flex-shrink-0 items-center font-bold
-            hover:scale-105 transition-all duration-300"
+            hover:scale-105 transition-all duration-300
+            md:ps-0
+            ps-6"
             href="#Home"
           >
             <img className="w-100 h-10 pe-2" src={logo} alt="" />
@@ -78,7 +86,9 @@ function Header() {
             <span className="text-blue ps-1"> ACOSTA{"/>"}</span>
           </a>
           <div className="hidden md:ml-auto md:block">
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 
+            lg:text-base
+            text-sm">
               {navlinks.map((d, i) => (
                 <a
                   key={i}
@@ -92,7 +102,7 @@ function Header() {
               ))}
               <button
                 onClick={handleChangeTheme}
-                className="text-xl text-black hover:text-blue
+                className="text-black hover:text-blue
               dark:text-white dark:hover:text-blue
                 transition-all duration-300 transform hover:scale-125"
               >
@@ -109,9 +119,11 @@ function Header() {
           isSideMenuOpen && "translate-x-0 z-50"
         )}
       >
-        <div className="flex-col absolute left-0 top-0 h-screen p-8 gap-8 w-full flex
+        <div
+          className="flex-col absolute left-0 top-0 h-screen p-8 gap-8 w-full flex
         bg-white text-black
-        dark:bg-darkblue dark:text-white">
+        dark:bg-darkblue dark:text-white"
+        >
           <IoCloseOutline
             onClick={() => setMenu(false)}
             className="mt-0 mb-8 text-3xl cursor-pointer"

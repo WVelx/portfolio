@@ -8,7 +8,11 @@ export function Title({ number, text }: TitleProps) {
   return (
     <div className="my-5">
       <h2
-        className="relative font-bold lg:text-3xl md:text-2xl"
+        className="relative font-bold
+        lg:text-2xl 
+        md:text-xl
+        sm:text-lg
+        text-base"
         id={`title-${text.toLowerCase().replace(/\s/g, "-")}`}
       >
         <span className="text-blue pe-2">{number}. {"<"}</span>

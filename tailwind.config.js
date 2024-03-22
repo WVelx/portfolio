@@ -5,12 +5,18 @@ export default {
   theme: {
     extend:{
       padding: {
+        'vh-15': '15vh',
+        'vh-20': '20vh', 
         'vh-25': '25vh', 
+        'vh-30': '30vh', 
         'vw-7': '7vw',
         'vw-15': '15vw',
       },
       margin: {
+        'vh-15': '15vh', 
+        'vh-20': '20vh', 
         'vh-25': '25vh', 
+        'vh-30': '30vh', 
         'vw-7': '7vw',
         'vw-15': '15vw',
       },

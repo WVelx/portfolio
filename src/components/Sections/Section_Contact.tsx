@@ -7,7 +7,11 @@ import { Btn_send } from "../Buttons/Elmnt_btn";
 function Section_Contact() {
   return (
     <Section id="Contact">
-        <div className="p-3">
+        <div className="container 
+        xl:py-4 xl:px-7
+        p-5
+        bg-white
+        dark:bg-darkblue">
         {Title({ number: 5, text: "Contacto" })}
         <div className="md:p-3 lg:mx-vw-15 md:mx-vw7">
           <div

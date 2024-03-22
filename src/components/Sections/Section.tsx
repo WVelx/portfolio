@@ -1,16 +1,14 @@
 import { ReactNode } from "react";
 
 interface Props {
-    id: string,
-    children: ReactNode,
+  id: string;
+  children: ReactNode;
 }
 
 function Section({ id, children }: Props) {
   return (
     <section
-      className="relative md:px-vw-7 sm:px-2
-        bg-white
-        dark:bg-darkblue"
+      className="relative lg:px-8 "
       id={id}
     >
       {children}

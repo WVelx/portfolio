@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
-  type Container,
   type ISourceOptions
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
@@ -14,16 +13,9 @@ const TSParticles = () => {
       await loadSlim(engine);
     }).then(() => {
       setInit(true);
+      console.log(init);
     });
   }, []);
-
-  const particlesLoaded = async (container?: Container): Promise<void> => {
-    let prueba = init;
-    const prueba2 = container ? container : [];
-
-    prueba = true;
-    console.log("Check: ", prueba, prueba2);
-  };
 
   const options: ISourceOptions = useMemo(
     () => ({
@@ -97,7 +89,6 @@ const TSParticles = () => {
   return (
     <Particles
       id="tsparticles"
-      particlesLoaded={particlesLoaded}
       options={options}
     />
   );
