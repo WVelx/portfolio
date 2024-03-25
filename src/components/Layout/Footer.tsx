@@ -1,45 +1,23 @@
 import { Icon } from "../UI/Icon";
-import { Copyright } from "../UI/Copyright";
 import { Line_gradient } from "../UI/Line";
 
-import { FaLinkedin, FaFacebook, FaGithub, FaWhatsapp } from "react-icons/fa";
+import socialNetworks from "../../assets/json/Socials.json";
 
 function Footer() {
   return (
-    <footer
-      className="relative max-w z-30 text-center shadow-md
-    lg:px-8 
-    md:text-base
-    text-sm
-    "
-    >
-      <div className="container
-      bg-white text-black
-      dark:bg-darkblue dark:text-white">
-        <div className="py-4">
+    <footer className="relative z-30 text-center md:text-base text-sm">
+      <div className="2xl:container p-4 shadow-sm shadow-lightTexttitle/10 dark:shadow-darkTexttitle/10 bg-lightBackground text-lightTexttitle dark:bg-darkBackground dark:text-darkTexttitle">
           <Line_gradient />
+        <div className="pt-3 pb-1 md:text-3xl text-2xl">
+          {socialNetworks.map(social =>(
+            <Icon href={social.link} socialNetwork={social.social}></Icon>
+          ))}
         </div>
-        <div
-          className="mb-2 
-      md:text-3xl
-      text-2xl"
-        >
-          <Icon href="#">
-            <FaLinkedin />
-          </Icon>
-          <Icon href="#">
-            <FaGithub />
-          </Icon>
-          <Icon href="#">
-            <FaWhatsapp />
-          </Icon>
-          <Icon href="#">
-            <FaFacebook />
-          </Icon>
-        </div>
-        <div>
-          <Copyright />
-        </div>
+        <p className="text-lightTextnormal dark:text-darkTextnormal">
+          Todos los derechos reservados <br/>
+          <strong className="text-black dark:text-white">Christian Acosta</strong>
+          <br/> © Copyright 2024.
+        </p>
       </div>
     </footer>
   );

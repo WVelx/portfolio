@@ -17,8 +17,8 @@ export function TextArea_Ctnc({ name, id, placeholder, rows }: textAreaProps) {
         placeholder={placeholder}
         rows={rows}
         className=" border-0 border-l-4 rounded-md p-2 mb-1 focus:outline-none
-      bg-white text-grayblack
-      dark:bg-darkblue dark:text-graywhite
+      bg-lightContent_1 text-lightTextnormal
+      dark:bg-darkContent_1 dark:text-darkTextnormal
       hover:border-blue hover:text-blue 
       focus:border-blue focus:text-blue transition-all duration-500"
       />

@@ -1,51 +1,36 @@
+import { FaAngleDoubleDown } from "react-icons/fa";
+
+import { Button_charge } from "../Buttons/Elmnt_other";
+
 interface CertificateProps {
   imageURL: string;
   nameCertificate: string;
   inforCertificate: string;
+  linkCertificate: string;
 }
 
-export function Certificate({
-  imageURL,
-  nameCertificate,
-  inforCertificate,
-}: CertificateProps) {
+export function Certificate({ imageURL, nameCertificate, inforCertificate, linkCertificate}: CertificateProps) {
   return (
     <div className="group rounded-md relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-black/30 transition-shadow">
-      <div className="w-auto 
-      lg:h-96 
-      h-72">
-        <img
-          className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
-          src={imageURL}
-          alt=""
-        />
+      <div className="w-auto lg:h-96 md:h-72 h-60">
+        <img className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" src={imageURL}/>
       </div>
-      <div
-        className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black
-      group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"
-      >
-        <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all duration-500">
-          <h5 className="text-white font-bold 
-          lg:mb-3 lg:text-2xl
-          md:mb-2 md:text-xl
-          sm:mb-1 sm:text-lg
-          mb-1 text-lg">
-            {nameCertificate}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black
+    group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-7 text-center translate-y-[60%] group-hover:translate-y-0 transition-all duration-500">
+          <h5 className="text-white font-bold lg:mb-3 lg:text-2xl md:mb-2 md:text-xl sm:mb-1 sm:text-lg mb-1 text-lg">
+            {nameCertificate.toUpperCase()}
           </h5>
-          <p
-            className="italic text-graywhite opacity-0 group-hover:opacity-100 transition-opacity duration-500
-          md:my-4 md:text-base
-          sm:my-2 sm:text-xs
-          my-2 text-xs">
+          <p className="text-wrap italic text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500
+          md:text-base mb-4 text-xs">
             {inforCertificate}
           </p>
-          <button className="rounded-full bg-blue py-1.5 px-3.5 capitalize text-white
-          lg:mt-3 lg:text-base
-          md:mt-2 md:text-sm 
-          sm:mt-1 sm:text-xs 
-          mt-1 text-xs">
-            Descargar
-          </button>
+          <Button_charge href= {linkCertificate} content="Descargar"
+          classPros="group relative inline-flex items-center py-2 overflow-hidden border-2 rounded-md
+          bg-white text-white border-white hover:text-white hover:bg-blue md:px-10 md:text-base px-8 text-xs"
+          blank={true}>
+            <FaAngleDoubleDown />
+          </Button_charge>
         </div>
       </div>
     </div>

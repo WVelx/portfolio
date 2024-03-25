@@ -25,18 +25,6 @@
         --dark-blue: #0f0f1b;
         --gray-blue: #2f2e41;
         --dark_gray-blue: #1e1d2b;
-
-
-
-        --background-color: var(--white);
-        --background-content: var(--gray_white);
-        --background-dark-content: var(--dark_gray_white);
-
-        --scroll-color: var(--gray-blue);
-
-        --text-color: var(--black);
-        --text-color-0opacity: var(--trasparent-black);
-        --shadow-text-color: var(--trasparent-black);
     }
 
     html {
@@ -45,17 +33,8 @@
         font-style: normal;
     }
 
-    .bx-shadow {
-        box-shadow: 0 4px 8px var(--shadow-text-color);
-    }
-
     a {
         text-decoration: none !important;
-    }
-
-    .line-bottom {
-        opacity: 0.8;
-        color: var(--text-color);
     }
 
     .line-bottom:hover {
@@ -88,6 +67,7 @@
         background: transparent;
         z-index: 0;
     }
+    
     .hr-custom {
         border: none;
         height: 2px;

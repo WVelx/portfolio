@@ -42,18 +42,28 @@ export default {
       transparent: "#ffffff00",
 
       white: "#ffffff",
-      graywhite: "#f7f7f7",
-      darkgray_white: "#b8b8b8",
       transpwhite: "#ffffff26",
 
       black: "#000000",
-      grayblack: "#141414",
       transpblack: "#00000026",
 
-      blue: "#3e30ff",
-      darkblue: "#0f0f1b",
+      blue: "#4086ff",
+
+      lightBackground: "#fff",
+      lightContent_1: "#f3f3f3",
+      lightContent_2: "#c5c5c5",
+      lightTexttitle: "#000000",
+      lightTextnormal: "#323232",
+
+      darkBackground: "#171718",
+      darkContent_1: "#252526",
+      darkContent_2: "#2d2d2d",
+      darkTexttitle: "#fff",
+      darkTextnormal: "#c5c5c5",
+
+      darkblue: "#171718",
       grayblue: "#2f2e41",
-      darkgray_blue: "#1e1d2b",
+      darkgray_blue: "#252526",
     }
   },
   plugins: [],

@@ -1,8 +1,7 @@
 import "./App.css";
 
-// LAYOUTS
-import Footer from "./components/Layout/Footer";
-import Header from "./components/Layout/Header";
+//LAYOUT
+import Layout from "./components/Layout/Layout";
 
 // SECTIONS
 import Section_Home from "./components/Sections/Section_Home";
@@ -13,20 +12,21 @@ import Section_Portfolio from "./components/Sections/Section_Portfolio";
 import Section_Contact from "./components/Sections/Section_Contact";
 
 function App() {
+  const classSection =
+    "lg:container md:p-7 p-4 bg-lightContent_1 dark:bg-darkContent_1";
+
   return (
     <div className="bg-white dark:bg-darkblue">
-      <Header />
-
-      <main className="p-0">
-        <Section_Home></Section_Home>
-        <Section_Aboutme></Section_Aboutme>
-        <Section_Skills></Section_Skills>
-        <Section_Certificate></Section_Certificate>
-        <Section_Portfolio></Section_Portfolio>
-        <Section_Contact></Section_Contact>
-      </main>
-
-      <Footer />
+      <Layout>
+        <main className="p-0">
+          <Section_Home></Section_Home>
+          <Section_Aboutme classSection={classSection}></Section_Aboutme>
+          <Section_Skills classSection={classSection}></Section_Skills>
+          <Section_Certificate classSection={classSection}></Section_Certificate>
+          <Section_Portfolio classSection={classSection}></Section_Portfolio>
+          <Section_Contact classSection={classSection}></Section_Contact>
+        </main>
+      </Layout>
     </div>
   );
 }

@@ -6,7 +6,7 @@ interface TitleProps {
 
 export function Title({ number, text }: TitleProps) {
   return (
-    <div className="my-5">
+    <div className="mb-5">
       <h2
         className="relative font-bold
         lg:text-2xl 

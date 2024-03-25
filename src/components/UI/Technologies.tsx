@@ -1,26 +1,34 @@
-import { ReactNode } from "react";
-
 interface Props {
   technologie: string;
-  children: ReactNode;
 }
 
-export function Technologies({technologie, children}:Props) {
+import { FaReact } from "react-icons/fa";
+import { SiTailwindcss, SiTypescript, SiMongodb } from "react-icons/si";
+
+export function Technologies({technologie}:Props) {
+
+  function getIcon(nameicon: string){
+    switch(nameicon){
+      case 'Tailwindcss':
+        return <SiTailwindcss/>
+      case 'TypeScript':
+        return <SiTypescript/>
+      case 'MongoDB':
+          return <SiMongodb/>
+      case 'React':
+        return <FaReact/>
+    }
+  }
+
   return (
-    <div className="group inline-flex justify-center items-center border-2 rounded-md p-2 m-1
-    border-black/15 dark:border-white/15">
-        <div className="text-blue pe-1
-        group-hover:scale-110 transition-transform duration-300
-        lg:text-2xl
-        md:text-xl
-        text-base">
-        {children}
+    <div className="group border-0 border-l-2 inline-flex justify-center items-center rounded-md p-2 m-1
+    bg-lightContent_1 border-lightTexttitle hover:border-blue
+    dark:bg-darkContent_1 dark:border-darkTexttitle dark:hover:border-blue
+    transition-all duration-500">
+        <div className="text-blue pe-1 group-hover:scale-110 transition-transform duration-300 lg:text-xl md:text-base text-sm">
+        {getIcon(technologie)}
         </div>
-        <span className="italic 
-        text-grayblack 
-        dark:text-graywhite
-        2xl:text-sm
-        text-xs">{technologie}</span>
+        <span className="italic text-lightTextnormal dark:text-darkTextnormal lg:text-sm text-xs">{technologie}</span>
     </div>
   )
 }
