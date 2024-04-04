@@ -47,23 +47,21 @@ export default {
       black: "#000000",
       transpblack: "#00000026",
 
-      blue: "#4086ff",
+      blue: "#99BEFF",
 
       lightBackground: "#fff",
       lightContent_1: "#f3f3f3",
       lightContent_2: "#c5c5c5",
       lightTexttitle: "#000000",
       lightTextnormal: "#323232",
+      lightBlue: "#001EFF",
 
       darkBackground: "#171718",
       darkContent_1: "#252526",
       darkContent_2: "#2d2d2d",
       darkTexttitle: "#fff",
       darkTextnormal: "#c5c5c5",
-
-      darkblue: "#171718",
-      grayblue: "#2f2e41",
-      darkgray_blue: "#252526",
+      darkBlue: "#8190FD",
     }
   },
   plugins: [],

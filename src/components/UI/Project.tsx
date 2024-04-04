@@ -12,10 +12,13 @@ interface Props {
 
 export function Project({ href, imageURL, nameProject, descrProject, children}: Props) {
   return (
-    <div className="border-0 rounded-md relative items-center justify-center bg-lightBackground dark:bg-darkBackground">
-      <div className="group w-auto relative cursor-pointer hover:shadow-black/30 transition-shadow lg:h-60 md:h-52 h-44">
-        <img className="h-full w-full rounded-md object-cover" src={imageURL}/>
-        <div className="absolute rounded-md inset-0 bg-gradient-to-b from-transparent via-transparent to-transpblack/5 group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+    <div className="border-2 border-lightContent_1 dark:border-darkContent_1 
+    border-t-4 border-t-lightTexttitle dark:border-t-darkTexttitle 
+    hover:border-t-lightBlue dark:hover:border-t-darkBlue transition-colors duration-500
+    rounded-md relative items-center justify-center bg-lightBackground dark:bg-darkBackground">
+      <div className="group w-auto relative cursor-pointer p-2 hover:shadow-black/30 transition-shadow lg:h-60 md:h-52 h-44">
+        <img className="group-hover:scale-105 transition-transform duration-500  h-full w-full rounded-md object-cover" src={imageURL}/>
+        <div className="absolute rounded-md inset-0 bg-gradient-to-b from-transparent via-transparent to-transpblack/5 group-hover:from-black/50 group-hover:via-black/40 group-hover:to-black/50">
           <a href={href} target="_blank" className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all duration-500 cursor-pointer">
             <FaExternalLinkAlt className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 md:text-xl text-lg"/>
           </a>

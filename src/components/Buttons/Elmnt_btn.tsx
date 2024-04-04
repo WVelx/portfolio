@@ -5,9 +5,9 @@ export function Btn_send() {
       className="group relative inline-flex items-center px-10 py-2 overflow-hidden text-lg border-2 rounded-md
       text-black border-black 
       dark:*:text-white dark:border-white
-      hover:text-white hover:bg-blue"
+      hover:text-white hover:bg-lightBlue dark:hover:bg-darkBlue"
     >
-      <span className="absolute left-0 block w-full h-0 transition-all bg-blue opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-500 ease"></span>
+      <span className="absolute left-0 block w-full h-0 transition-all bg-lightBlue dark:bg-darkBlue opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-500 ease"></span>
       <span className="absolute right-0 flex items-center justify-start w-8 h-10 duration-500 transform translate-x-full group-hover:translate-x-0 ease">
         <svg
           className="w-5 h-5"

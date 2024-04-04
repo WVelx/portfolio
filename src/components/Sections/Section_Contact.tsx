@@ -20,10 +20,6 @@ function Section_Contact({ classSection }: Props) {
       <div className="grid md:grid-cols-2 grid-cols-1">
         <div className="md:p-2 pb-2">
           <div className=" border-0 rounded-md bg-lightBackground dark:bg-darkBackground">
-            <p className="text-center py-5 font-bold text-xl text-black dark:text-white">
-              {" "}
-              ENVIA TU MENSAJE{" "}
-            </p>
             <form>
               <Imput_Cntc
                 type="text"
@@ -63,17 +59,17 @@ function Section_Contact({ classSection }: Props) {
             <img className="p-2" src={gif} alt="" />
             <div className="py-2">
               <div className="md:text-lg text-base flex items-center justify-center">
-                <i className="mx-2 inline-block text-blue"><MdEmail /></i>
+                <i className="mx-2 inline-block text-lightBlue dark:text-darkBlue"><MdEmail /></i>
                 christianacocar2001@gmail.com
               </div>
               <div className="md:text-lg text-base flex items-center justify-center">
-                <i className="mx-2 inline-block text-blue">
+                <i className="mx-2 inline-block text-lightBlue dark:text-darkBlue">
                   <FaPhoneAlt />
                 </i>
                 +57 3133151739
               </div>
               <div className="md:text-lg text-base flex items-center justify-center">
-                <i className="mx-2 inline-block text-blue">
+                <i className="mx-2 inline-block text-lightBlue dark:text-darkBlue">
                   <MdLocationPin />
                 </i>
                 Florencia - Colombia

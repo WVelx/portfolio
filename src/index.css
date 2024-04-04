@@ -27,6 +27,21 @@
         --dark_gray-blue: #1e1d2b;
     }
 
+    @keyframes cursor {
+        50%{
+            border-color: transparent;
+        }
+    }
+
+    @keyframes typing {
+        from{
+            width: 0;
+        }
+        to{
+            width: 100%;
+        }
+    }
+
     html {
         font-family: 'Roboto Slab', serif;
         font-optical-sizing: auto;
@@ -37,9 +52,16 @@
         text-decoration: none !important;
     }
 
+    .text-writer{
+        white-space: nowrap;
+        overflow: hidden;
+        animation: 
+        typing 2s steps(30),
+        cursor .5s step-end infinite alternate;
+    }
+
     .line-bottom:hover {
         opacity: 1;
-        color: var(--blue);
     }
 
     .line-bottom::after {
@@ -50,7 +72,6 @@
         transform: translateX(-50%);
         width: 0;
         height: 3px;
-        background-color: var(--blue);
         transition: width 0.5s ease !important;
     }
 

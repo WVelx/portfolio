@@ -22,8 +22,8 @@ export function Button_charge({ href, click, classPros, content, blank, children
       target={target} 
       rel={blank ? "noopener noreferrer" : undefined}
     >
-      <span className="absolute left-0 block w-full h-0 transition-all bg-blue opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-500 ease"></span>
-      <span className="absolute right-0 flex items-center justify-start w-7 h-10 duration-500 transform translate-x-full group-hover:translate-x-0 ease">
+      <span className="absolute left-0 block w-full h-0 transition-all bg-lightBlue dark:bg-darkBlue opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-500 ease"></span>
+      <span className="absolute left-0 flex items-center justify-end w-7 h-10 duration-500 transform -translate-x-full group-hover:translate-x-0 ease">
         {children}
       </span>
       <span className="relative">{content}</span>

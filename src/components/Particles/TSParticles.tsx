@@ -20,41 +20,20 @@ const TSParticles = () => {
   const options: ISourceOptions = useMemo(
     () => ({
       fpsLimit: 60,
-      interactivity: {
-        events: {
-          onClick: {
-            enable: true,
-            mode: "push",
-          },
-          onHover: {
-            enable: true,
-            mode: "repulse",
-          },
-        },
-        modes: {
-          push: {
-            quantity: 4,
-          },
-          repulse: {
-            distance: 200,
-            duration: 0.4,
-          },
-        },
-      },
       particles: {
         color: {
           value: "#4086ff",
         },
         links: {
           color: "#4086ff",
-          distance: 200,
+          distance: 350,
           enable: true,
-          opacity: 0.7,
+          opacity: 0.5,
           width: 1,
         },
         move: {
           enable: true,
-          speed: 2.5,
+          speed: 1.25,
           direction: "none",
           random: false,
           straight: false,
@@ -69,16 +48,16 @@ const TSParticles = () => {
           density: {
             enable: true,
           },
-          value: 30,
+          value: 35,
         },
         opacity: {
-          value: 0.8,
+          value: 0.5,
         },
         shape: {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: 2, max: 5 },
         },
       },
       detectRetina: true,

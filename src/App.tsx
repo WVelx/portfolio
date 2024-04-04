@@ -13,10 +13,10 @@ import Section_Contact from "./components/Sections/Section_Contact";
 
 function App() {
   const classSection =
-    "lg:container md:p-7 p-4 bg-lightContent_1 dark:bg-darkContent_1";
+    "2xl:container p-6 bg-lightBackground dark:bg-darkBackground";
 
   return (
-    <div className="bg-white dark:bg-darkblue">
+    <div className="bg-lightBackground dark:bg-darkBackground">
       <Layout>
         <main className="p-0">
           <Section_Home></Section_Home>

@@ -17,7 +17,7 @@ export function Icon({ href, socialNetwork }: IconProps) {
   }
 
   return (
-    <a href={href} target="_blank" className="mx-2 inline-block text-lightTexttitle hover:text-blue dark:text-darkTexttitle dark:hover:text-blue
+    <a href={href} target="_blank" className="mx-2 inline-block text-lightTexttitle hover:text-lightBlue dark:hover:text-darkBlue dark:text-darkTexttitle dark:hover:text-blue
     transition-all duration-500 transform hover:scale-125">
       {getIcon(socialNetwork)}
     </a>
